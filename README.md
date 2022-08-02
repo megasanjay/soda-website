@@ -14,6 +14,9 @@
 ![Checkly Status](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default)
 ![Checkly Response Time](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default&responseTime=true)
 
+![](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default)
+![](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default&responseTime=true)
+
 ## Project setup
 
 Make sure to install the dependencies.
