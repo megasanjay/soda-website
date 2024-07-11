@@ -6,6 +6,7 @@ import Collaborators from '@/components/home/collaborators';
 import ProjectsCarousel from '@/components/home/projectsCarousel';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
+import { SpotlightCard } from '@/components/ui/SpotlightCard';
 
 export default function Home() {
   return (
@@ -72,79 +73,111 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
+        <div className="flex h-full flex-col items-center justify-start py-1 md:flex-row">
           <Link
             href="/sodaforsparc"
             passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-7/12"
+            className="relative h-full cursor-pointer rounded-lg md:min-h-[180px] md:w-7/12"
           >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                SODA for SPARC
-              </h3>
+            <SpotlightCard
+              from="#CD329F"
+              via="#CD329F"
+              className="relative mx-auto w-full max-w-2xl rounded-[--radius] p-8 [--radius:theme(borderRadius.2xl)]"
+            >
+              <div className="absolute inset-px rounded-[calc(var(--radius)-1px)] bg-pink-50/95"></div>
 
-              <p className="font-asap text-lg">
-                Easily make bioelectronic, neurophysiology, and other similar
-                research data and computational models FAIR following the NIH
-                SPARC guidelines
-              </p>
-            </div>
+              <div className="relative">
+                <h3 className="mb-2 text-2xl font-bold text-stone-900">
+                  SODA for SPARC
+                </h3>
+
+                <p className="font-asap text-lg">
+                  Easily make bioelectronic, neurophysiology, and other similar
+                  research data and computational models FAIR following the NIH
+                  SPARC guidelines
+                </p>
+              </div>
+            </SpotlightCard>
           </Link>
 
           <Link
             href="/aireadi"
             passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-5/12"
+            className="relative h-full cursor-pointer rounded-lg md:min-h-[180px] md:w-5/12"
           >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                AI-READI
-              </h3>
+            <SpotlightCard
+              from="#CD329F"
+              via="#CD329F"
+              className="relative mx-auto w-full max-w-2xl rounded-[--radius] p-8 [--radius:theme(borderRadius.2xl)]"
+            >
+              <div className="absolute inset-px rounded-[calc(var(--radius)-1px)] bg-pink-50/95"></div>
 
-              <p className="font-asap text-lg">
-                Generating a flagship AI-ready and ethically-sourced dataset to
-                support future AI-driven discoveries in diabetes
-              </p>
-            </div>
+              <div className="relative">
+                <h3 className="mb-2 text-2xl font-bold text-stone-900">
+                  AI-READI
+                </h3>
+
+                <p className="font-asap text-lg">
+                  Generating a flagship AI-ready and ethically-sourced dataset
+                  to support future AI-driven discoveries in diabetes
+                </p>
+              </div>
+            </SpotlightCard>
           </Link>
         </div>
 
-        <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
+        <div className="flex h-full flex-col items-center justify-end gap-3 py-1 md:flex-row">
           <Link
             href="/codefair"
             passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-5/12"
+            className="cursor-pointer rounded-lg md:min-h-[200px] md:w-5/12"
           >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                Codefair
-              </h3>
+            <SpotlightCard
+              from="#CD329F"
+              via="#CD329F"
+              className="relative mx-auto w-full max-w-2xl rounded-[--radius] p-8 [--radius:theme(borderRadius.2xl)]"
+            >
+              <div className="absolute inset-px rounded-[calc(var(--radius)-1px)] bg-pink-50/95"></div>
 
-              <p className="font-asap text-lg">
-                codefair is your personal assistant when it comes to making your
-                research software reusable and especially complying with the
-                Findable, Accessible, Interoperable, Reusable (FAIR) Principles
-                for Research Software.
-              </p>
-            </div>
+              <div className="relative">
+                <h3 className="mb-2 text-2xl font-bold text-stone-900">
+                  Codefair
+                </h3>
+
+                <p className="font-asap text-lg">
+                  codefair is your personal assistant when it comes to making
+                  your research software reusable and especially complying with
+                  the Findable, Accessible, Interoperable, Reusable (FAIR)
+                  Principles for Research Software.
+                </p>
+              </div>
+            </SpotlightCard>
           </Link>
 
           <Link
             href="/fair-biors"
             passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-7/12"
+            className="cursor-pointer rounded-lg md:min-h-[200px] md:w-7/12"
           >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                FAIR Biomedical Research Software (FAIR-BioRS) guidelines
-              </h3>
+            <SpotlightCard
+              from="#CD329F"
+              via="#CD329F"
+              className="relative mx-auto w-full max-w-2xl rounded-[--radius] p-8 [--radius:theme(borderRadius.2xl)]"
+            >
+              <div className="absolute inset-px rounded-[calc(var(--radius)-1px)] bg-pink-50/95"></div>
 
-              <p className="font-asap text-lg">
-                The FAIR-BioRS guidelines are a set of minimal and actionable
-                step-by-step instructions for making biomedical research
-                software FAIR
-              </p>
-            </div>
+              <div className="relative">
+                <h3 className="mb-2 text-2xl font-bold text-stone-900">
+                  FAIR Biomedical Research Software (FAIR-BioRS) guidelines
+                </h3>
+
+                <p className="font-asap text-lg">
+                  The FAIR-BioRS guidelines are a set of minimal and actionable
+                  step-by-step instructions for making biomedical research
+                  software FAIR
+                </p>
+              </div>
+            </SpotlightCard>
           </Link>
         </div>
 
